@@ -2,7 +2,7 @@
 
 This project is a work requested for the discipline of Algorithm Analysis taught in the Bachelor's Degree in Information Systems at UFPA.
 
-This work aims to analyze the complexities and imply some tests on top of the BucketSort, CountingSort, HeapSort, QuickSort and RadixSort algorithms.
+This work aims to analyze the complexities and imply some tests on top of the BucketSort, CountingSort, HeapSort, QuickSort and RadixSort algorithms. The full requirements are described in the file in this [link](https://drive.google.com/file/d/102ynRz7TVMj_YeTqy21B9Yq9vdnNDpLU/view?usp=sharing).
 
 ## Technologies
 
