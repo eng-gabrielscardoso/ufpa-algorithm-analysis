@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+    "steoates.autoimport",
+    "mgmcdermott.vscode-language-babel",
+    "aaron-bond.better-comments",
+    "ambar.bundle-size",
+    "streetsidesoftware.code-spell-checker",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "rvest.vs-code-prettier-eslint"
+  ]
+}

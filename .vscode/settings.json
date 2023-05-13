@@ -3,5 +3,25 @@
     "Luid",
     "Sarmento",
     "ufpa"
-  ]
+  ],
+  "editor.tabSize": 2,
+  "editor.renderWhitespace": "none",
+  "editor.renderControlCharacters": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "todohighlight.isEnable": true,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "cSpell.language": "en-GB",
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
