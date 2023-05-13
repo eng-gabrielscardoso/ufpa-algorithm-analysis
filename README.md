@@ -8,7 +8,7 @@ This work aims to analyze the complexities and imply some tests on top of the Bu
 
 The technologies used in the project were the most recent versions of:
 
-- Javascript and Typescript
+- Javascript, Typescript and Jest
 - NodeJS and NPM
 - Docker and Docker Compose
 - Visual Studio Code 1.78.2

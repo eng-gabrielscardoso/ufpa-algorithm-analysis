@@ -5,6 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "npx tsc",
+    "clear": "npm run clear:unix || npm run clear:win",
+    "clear:unix": "rm -rf ./dist",
+    "clear:win": "rmdir /s /q dist",
     "dev": "npm run build && node ./dist/main.js",
     "test": "jest"
   },
