@@ -60,8 +60,8 @@ If you really haven't Docker or haven't installed in your machine the necessary 
 The work was done by students:
 
 - Gabriel Santos Cardoso - 202111140007 <eng.gabrielscardoso@gmail.com>
-- Bruno Alves da Cunha - 202111140032 <>
-- Luid Figueiredo Sarmento - 202111140033 <>
+- Bruno Alves da Cunha - 202111140032 <bruno.cunha@icen.ufpa.br>
+- Luid Figueiredo Sarmento - 202111140033 <luyd.estudos2020@gmail.com>
 
 ## Licence
 
