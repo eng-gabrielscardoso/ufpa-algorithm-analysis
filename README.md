@@ -14,6 +14,7 @@ The technologies used in the project were the most recent versions of:
 - Visual Studio Code 1.78.2
 - Git version 2.34.1
 - Github and Github CLI.
+- ViaCEP API
 
 ## Installation
 
