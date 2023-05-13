@@ -1,0 +1,12 @@
+version: "3"
+services:
+  app:
+    image: node:latest
+    container_name: app
+    entrypoint: /bin/sh
+    working_dir: /var/www/app
+    volumes:
+      - type: bind
+        source: .
+        target: /var/www/app
+    tty: true

@@ -19,9 +19,41 @@ The technologies used in the project were the most recent versions of:
 
 This project requires you have installed in your machine the most recent version of Docker and Docker Compose, so make sure that you have them.
 
-First of all, clone the repository in your local environment. You could use the Github or Github CLI, or simple run `git clone https://github.com/eng-gabrielscardoso/ufpa-algorithms-analysis/`. In the root of the repository run the following command to up the containers:
+First of all, clone the repository in your local environment. You could use the Github or Github CLI, or simple run `git clone https://github.com/eng-gabrielscardoso/ufpa-algorithms-analysis/`. After it you have two options to configure the project, with Docker only or using the Docker Compose (recommended).
 
-> Under development
+### Docker Configuration
+
+First of all you need to build the image using the following command:
+
+```bash
+docker build -t app .
+```
+
+**Essential Commands**
+
+- Build: `docker run -v .:/var/www/app -it app build`
+- Run development scripts: `docker run -v .:/var/www/app -it app dev`
+- Run unit tests: `docker run -v .:/var/www/app -it app test`
+- Clear dist (build assets): `docker run -v .:/var/www/app -it app clear`
+
+### Docker Compose Configuration
+
+You could use the following command to configure and start the containers:
+
+```bash
+docker-compose up -d --build
+```
+
+**Essential Commands**
+
+- Build: `docker-compose exec app npm run build`
+- Run development scripts: `docker-compose exec app npm run dev`
+- Run unit tests: `docker-compose exec app npm run test`
+- Clear dist (build assets): `docker-compose exec app npm run clear`
+
+## Repl.it
+
+If you really haven't Docker or haven't installed in your machine the necessary SDK to run the application you still could use the public Repl.it feature to see in live. Just go to the following [link](https://replit.com/@enggscardso/ufpa-algorithm-analysis#package.json).
 
 ## Authors
 
