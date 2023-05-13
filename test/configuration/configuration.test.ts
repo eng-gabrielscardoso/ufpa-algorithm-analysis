@@ -5,7 +5,7 @@ dotenv.config();
 
 describe("Configuration file tests", () => {
   /** @test */
-  test("should load correctly api base url", () => {
+  test("should load correctly API base URL", () => {
     const apiBaseUrl = process.env.API_BASE_URL;
     expect(configuration.apiBaseUrl).toEqual(apiBaseUrl);
   });

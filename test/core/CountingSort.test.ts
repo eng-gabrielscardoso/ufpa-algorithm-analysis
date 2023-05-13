@@ -1,4 +1,3 @@
-import { faker } from "@faker-js/faker";
 import CountingSort from "src/core/CountingSort";
 
 describe("CountingSort tests", () => {
