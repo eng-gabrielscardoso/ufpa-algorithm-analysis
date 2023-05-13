@@ -1,0 +1,24 @@
+{
+  "name": "ufpa-algorithm-analysis",
+  "version": "1.0.0",
+  "description": "This project is a work requested for the discipline of Algorithm Analysis taught in the Bachelor's Degree in Information Systems at UFPA.",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tsc",
+    "dev": "npm run build && node ./dist/main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eng-gabrielscardoso/ufpa-algorithm-analysis.git"
+  },
+  "author": "Gabriel Santos Cardoso <eng.gabrielscardoso@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eng-gabrielscardoso/ufpa-algorithm-analysis/issues"
+  },
+  "homepage": "https://github.com/eng-gabrielscardoso/ufpa-algorithm-analysis#readme",
+  "dependencies": {
+    "typescript": "^5.0.4"
+  }
+}
