@@ -20,7 +20,24 @@ The technologies used in the project were the most recent versions of:
 
 This project requires you have installed in your machine the most recent version of Docker and Docker Compose, so make sure that you have them.
 
-First of all, clone the repository in your local environment. You could use the Github or Github CLI, or simple run `git clone https://github.com/eng-gabrielscardoso/ufpa-algorithms-analysis/`. After it you have two options to configure the project, with Docker only or using the Docker Compose (recommended).
+First of all, clone the repository in your local environment. You could use the Github or Github CLI, or simple run `git clone https://github.com/eng-gabrielscardoso/ufpa-algorithms-analysis.git`. After it you have two options to configure the project, with SDK, with Docker only or using the Docker Compose (recommended).
+
+## With SDK (NodeJS stack)
+
+Install necessary dependencies with the following command:
+
+```bash
+npm i
+```
+
+**Essential Commands**
+
+- Build: `npm run build`
+- Run development scripts: `npm run dev`
+- Run unit tests: `npm run test`
+- Clear dist (build assets): `npm run clear`
+
+## Docker
 
 ### Docker Configuration
 
@@ -52,9 +69,13 @@ docker-compose up -d --build
 - Run unit tests: `docker-compose exec app npm run test`
 - Clear dist (build assets): `docker-compose exec app npm run clear`
 
+## Github Codespaces
+
+A simple way to test project is using [Github Codespaces](https://github.com/features/codespaces). You could just press "." key in your keyboard and a web instance of Visual Studio Code will open in your Github with the project. To run commands the Github will recommend you to instance a Virtual Machine (for free) and will provide all resources to use, code and test the project via web. After create your Github Codespace you could follow the instructions of [SDK installation](#with-sdk-nodejs-stack).
+
 ## Repl.it
 
-If you really haven't Docker or haven't installed in your machine the necessary SDK to run the application you still could use the public Repl.it feature to see in live. Just go to the following [link](https://replit.com/@enggscardso/ufpa-algorithm-analysis#package.json).
+If you really haven't Docker or haven't installed in your machine the necessary SDK to run the application you still could use the public [Repl.it](https://replit.com/) feature to see in live. Just go to the following [link](https://replit.com/@enggscardso/ufpa-algorithm-analysis).
 
 ## Authors
 
