@@ -3,7 +3,7 @@ import configuration from "src/config/configuration";
 
 dotenv.config();
 
-describe("Configuration file tests", () => {
+describe("Configuration file tests", async () => {
   /** @test */
   test("should load correctly API base URL", () => {
     const apiBaseUrl = process.env.API_BASE_URL;

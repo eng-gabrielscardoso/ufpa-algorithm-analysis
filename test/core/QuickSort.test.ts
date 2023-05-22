@@ -3,7 +3,7 @@ import QuickSort from "src/core/QuickSort";
 
 describe("QuickSort tests", () => {
   /** @test */
-  test("should instance a QuickSort correctly", () => {
+  test("should instance a QuickSort correctly", async () => {
     const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
     const qs = new QuickSort(numbers);
@@ -12,7 +12,7 @@ describe("QuickSort tests", () => {
   });
 
   /** @test */
-  test("should order a random sequence of 1-100 range as input and print the result of execution with middle pivot", () => {
+  test("should order a random sequence of 1-100 range as input and print the result of execution with middle pivot", async () => {
     const numbers = new Array(100)
       .fill(0)
       .map((element) => (element = faker.number.int({ min: 1, max: 100 })));
@@ -25,7 +25,7 @@ describe("QuickSort tests", () => {
   });
 
   /** @test */
-  test("should compare ordered and non ordered sequences and different inputs sizes to determinate algorithm efficiency with middle pivot", () => {
+  test("should compare ordered and non ordered sequences and different inputs sizes to determinate algorithm efficiency with middle pivot", async () => {
     const numbers = (size: number): number[] =>
       new Array(size)
         .fill(0)
@@ -49,7 +49,7 @@ describe("QuickSort tests", () => {
   });
 
   /** @test */
-  test("should order a random sequence of 1-100 range as input and print the result of execution with random pivot", () => {
+  test("should order a random sequence of 1-100 range as input and print the result of execution with random pivot", async () => {
     const numbers = new Array(100)
       .fill(0)
       .map((element) => (element = faker.number.int({ min: 1, max: 100 })));
@@ -62,7 +62,7 @@ describe("QuickSort tests", () => {
   });
 
   /** @test */
-  test("should compare ordered and non ordered sequences and different inputs sizes to determinate algorithm efficiency with random pivot", () => {
+  test("should compare ordered and non ordered sequences and different inputs sizes to determinate algorithm efficiency with random pivot", async () => {
     const numbers = (size: number): number[] =>
       new Array(size)
         .fill(0)

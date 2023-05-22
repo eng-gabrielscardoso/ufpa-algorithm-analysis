@@ -1,16 +1,27 @@
 import CepsService from "src/service/CepsService";
+import { ICepsResponse } from "src/service/CepsService";
 
 describe("CepsService tests", () => {
   /** @test */
   test("should instance correctly a CEPs Service", () => {
-    const cepsService = new CepsService();
+    const response = new CepsService();
 
-    expect(cepsService).not.toBeNull();
+    expect(response).not.toBeNull();
   });
 
-  test("should return a 200 status code", () => {});
+  /** @test */
+  test("should return a 200 status code", async () => {
+    const response = await CepsService.getCeps();
 
-  test("should return a valid JSON structure", () => {});
+    expect(response.status).toBe(200);
+  });
 
-  test("should return a valid response", () => {});
+  /** @test */
+  test("should return a valid JSON structure", async () => {
+    const response = await CepsService.getCeps();
+
+    expect(response).toBeDefined();
+
+    expect(typeof response).toBe("object");
+  });
 });
