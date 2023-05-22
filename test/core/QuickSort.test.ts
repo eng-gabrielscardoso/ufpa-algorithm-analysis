@@ -1,5 +1,6 @@
 import { faker } from "@faker-js/faker";
 import QuickSort from "src/core/QuickSort";
+import configuration from "src/config/configuration";
 
 describe("QuickSort tests", () => {
   /** @test */
@@ -18,6 +19,12 @@ describe("QuickSort tests", () => {
       .map((element) => (element = faker.number.int({ min: 1, max: 100 })));
 
     const qs = new QuickSort(numbers, true);
+
+    if (configuration.appEnv === "test") {
+      console.time("Sorting time");
+      console.log(qs.sort());
+      console.timeEnd("Sorting time");
+    }
 
     expect(qs.sort()).toStrictEqual(
       numbers.sort((a: number, b: number): number => a - b)
