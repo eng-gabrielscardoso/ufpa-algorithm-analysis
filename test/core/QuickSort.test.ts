@@ -21,9 +21,13 @@ describe("QuickSort tests", () => {
     const qs = new QuickSort(numbers, true);
 
     if (configuration.appEnv === "test") {
-      console.time("Sorting time");
+      console.time(
+        "Should order a random sequence of 1-100 range as input and print the result of execution with middle pivot. Total sorting time"
+      );
       console.log(qs.sort());
-      console.timeEnd("Sorting time");
+      console.timeEnd(
+        "Should order a random sequence of 1-100 range as input and print the result of execution with middle pivot. Total sorting time"
+      );
     }
 
     expect(qs.sort()).toStrictEqual(
