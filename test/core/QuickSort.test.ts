@@ -13,6 +13,24 @@ describe("QuickSort tests", () => {
   });
 
   /** @test */
+  test("should order a random 1-100 range elements and print execution with middle pivot", async () => {
+    const numbers = new Array(100)
+        .fill(0)
+        .map((element) => (element = faker.number.int({ min: 1, max: 100 })));
+
+      const qs = new QuickSort(numbers, true);
+
+      if (configuration.appEnv === "test") {
+        console.time("Should order a random 1-100 range elements and print execution with middle pivot. Total sorting time")
+        console.log(numbers)
+        console.log(qs.sort())
+        console.timeEnd("Should order a random 1-100 range elements and print execution with middle pivot. Total sorting time")
+      }
+
+      expect(qs.sort()).toStrictEqual(numbers.sort((a: number, b: number): number => a - b))
+  });
+
+  /** @test */
   test("should order a ascending ordered sequences and different inputs sizes to determinate algorithm efficiency with middle pivot", async () => {
     const numbers = (size: number): number[] =>
       new Array(size)
