@@ -1,5 +1,4 @@
 import CepsService from "src/service/CepsService";
-import { ICepsResponse } from "src/service/CepsService";
 
 describe("CepsService tests", () => {
   /** @test */
