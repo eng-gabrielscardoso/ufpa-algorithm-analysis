@@ -20,7 +20,12 @@ The technologies used in the project were the most recent versions of:
 
 This project requires you have installed in your machine the most recent version of Docker and Docker Compose, so make sure that you have them.
 
-First of all, clone the repository in your local environment. You could use the Github or Github CLI, or simple run `git clone https://github.com/eng-gabrielscardoso/ufpa-algorithms-analysis.git`. After it you have two options to configure the project, with SDK, with Docker only or using the Docker Compose (recommended).
+First of all, clone the repository in your local environment. You could use the Github or Github CLI, or simple run `git clone https://github.com/eng-gabrielscardoso/ufpa-algorithms-analysis.git`. After it you have three options to configure the project, with SDK, with Docker only or using the Docker Compose (recommended).
+
+Before the installation, make sure to copy the `.env.example` file as your `.env`. Actually there area two variables:
+
+- `APP_ENV`: this is the environment that will be ran when the project were executed. There are two values possible here: `local` and `test
+- `API_BASE_URL`: this is the environment that will describe the API url that will be called by Axios when the project were use the Services.
 
 ## With SDK (NodeJS stack)
 
