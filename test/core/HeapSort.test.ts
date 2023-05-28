@@ -195,7 +195,7 @@ describe("HeapSort tests", () => {
   });
 
   /** @test */
-  test.only("should compare a non ordered sequences and different inputs sizes to determinate algorithm efficiency", async () => {
+  test("should compare a non ordered sequences and different inputs sizes to determinate algorithm efficiency", async () => {
     const numbers = (size: number): number[] =>
       new Array(size)
         .fill(0)

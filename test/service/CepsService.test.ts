@@ -1,3 +1,4 @@
+import HttpClient from 'src/service/HttpClient';
 import CepsService from "src/service/CepsService";
 
 describe("CepsService tests", () => {

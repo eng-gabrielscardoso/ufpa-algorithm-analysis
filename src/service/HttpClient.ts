@@ -2,11 +2,13 @@ import axios, { AxiosInstance } from "axios";
 import configuration from "../config/configuration";
 
 export default class HttpClient {
+  private baseUrl: string;
   private instance: AxiosInstance;
 
-  constructor() {
+  constructor(baseUrl: string = configuration.apiBaseUrl) {
+    this.baseUrl = baseUrl
     this.instance = axios.create({
-      baseURL: configuration.apiBaseUrl,
+      baseURL: baseUrl,
       timeout: 10000,
     });
   }
